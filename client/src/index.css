@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+
+
+
+.bg-animation {
+    background: radial-gradient(circle, rgba(240, 245, 255, 0.8) 0%, rgba(240, 245, 255, 0) 60%);
+    animation: rotate 20s infinite linear;
+    background-size: 200% 200%;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-10%, -10%);
+    }
+    50% {
+      transform: translate(10%, 10%);
+    }
+    100% {
+      transform: translate(-10%, -10%);
+    }
+  }
+  
