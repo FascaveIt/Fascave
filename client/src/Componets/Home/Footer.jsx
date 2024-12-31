@@ -92,9 +92,9 @@ const Footer = () => {
           {/* Proud Partners */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Proud Partners</h3>
-            <div className="bg-purple-100 p-4 rounded-md">
+            <div className=" rounded-md">
               <img
-                src="/path-to-microsoft-logo.png"
+                src="/Images/background.png"
                 alt="Microsoft for Startups"
                 className="w-full"
               />
