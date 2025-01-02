@@ -1,5 +1,5 @@
 import React from "react";
-import OurClient from "../Componets/Home/OurClinet";
+import OurClient from "../Componets/Ourclients/OurClinet";
 import OurPatners from "../Componets/Home/OurPatners";
 import WhyChooseUs from "../Componets/Home/WhyChooseUs";
 import ClientTestimonials from "../Componets/Home/ClientTestimonials";
