@@ -1,0 +1,22 @@
+@media (max-width: 700px) {
+
+.ourclients{
+    margin: 15vh 0;
+    padding: 0;
+    background-color: #FEFEFF;
+    h1{
+        z-index: 1001;
+        font-size: 30px;
+        font-family: "Poppins", serif;
+        color: #262262;
+        font-weight:bold;
+    }
+    .clients-logos{
+        img{
+            height: 119px;
+        }
+    }
+}
+
+
+}
