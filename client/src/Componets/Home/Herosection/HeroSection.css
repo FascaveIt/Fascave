@@ -16,3 +16,67 @@
     transform: translate(0%, 0%);
   }
 }
+
+
+
+
+@media (max-width: 700px) {
+
+
+  .Hero{
+    margin-top:10vh ;
+
+  }
+ .Details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+
+  .animation{
+   opacity: 0.5;
+  }
+
+  .information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .h1{
+      font-size: 15.43px;
+      font-weight:700;
+
+      font-family: "Poppins", serif;
+      line-height: 23.5px;
+      align-items: center; 
+          .span{
+            color: #5AC8FA;
+          }
+    }
+    .p{
+      
+      font-size: 14px;
+      font-weight: 400;
+
+      font-family: "Poppins", serif;
+      line-height: 21px;
+      align-items: center;
+
+    }
+  }
+ 
+.button{
+  width: 251px;
+  height: 44px;
+justify-content: center;
+ gap: 10px;
+padding: 10px 3px;
+font-weight: bold;
+font-size: 14.18px;
+margin: auto;
+.call{
+  font-weight: bold;
+font-size: 24.18px;
+}
+}
+}
