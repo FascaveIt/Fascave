@@ -4,7 +4,7 @@ import OurPatners from "../Componets/Home/OurPatners";
 import WhyChooseUs from "../Componets/Home/WhyChooseUs";
 import ClientTestimonials from "../Componets/Home/ClientTestimonials";
 import HeroSection from "../Componets/Home/Herosection/HeroSection";
-import OurPortfolioScrollRight from "../Componets/Home/OurPortfolioScrollRight";
+import OurPortfolioScrollRight from "../Componets/Home/Portfolio/OurPortfolioScrollRight";
 import ScrolingCard from "../Componets/Home/Ourservices/ScrolingCard";
 import FAQ from "../Componets/Home/Faq";
 
