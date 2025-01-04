@@ -2,7 +2,7 @@ import React from "react";
 import OurClient from "../Componets/Home/Ourclients/OurClinet";
 import OurPatners from "../Componets/Home/OurPatners";
 import WhyChooseUs from "../Componets/Home/WhyChooseUs";
-import ClientTestimonials from "../Componets/Home/ClientTestimonials";
+import ClientTestimonials from "../Componets/Home/Testimonials/ClientTestimonials";
 import HeroSection from "../Componets/Home/Herosection/HeroSection";
 import OurPortfolioScrollRight from "../Componets/Home/Portfolio/OurPortfolioScrollRight";
 import ScrolingCard from "../Componets/Home/Ourservices/ScrolingCard";
