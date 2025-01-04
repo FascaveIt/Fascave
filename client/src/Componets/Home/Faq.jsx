@@ -29,7 +29,7 @@ const FAQ = () => {
       <h2 className="text-2xl font-bold text-center mb-4 text-purpleText">
         FREQUENTLY ASKED QUESTIONS
       </h2>
-      <p className="text-center text-gray-600 mb-6">
+      <p className="text-center text-gray-600 mb-6 sm:text-base text-[16px]">
         Our Frequently Asked Questions Are Designed To Provide Quick, Insightful
         Solutions To Your Queries.
       </p>

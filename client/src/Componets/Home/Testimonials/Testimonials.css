@@ -1,0 +1,28 @@
+@media(max-width: 700px){
+.OurTestimonials{
+
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #262262;
+}
+.ourtestimonialsp{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #666666;
+}
+
+
+ .clientcard{
+    width: 300px;
+    .p{
+    font-size: 13.57px;
+    color: #666666;
+}
+h3{
+    font-size: 18px;
+    color: #232323;
+}
+ }
+}

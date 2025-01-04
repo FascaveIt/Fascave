@@ -4,6 +4,9 @@
   background-size: 200% 200%;
   
 }
+.animation{
+  opacity: 0.3;
+ }
 
 @keyframes rotate {
   0% {
@@ -35,7 +38,7 @@
 
 
   .animation{
-   opacity: 0.5;
+   opacity: 0.3;
   }
 
   .information{

@@ -1,0 +1,76 @@
+:root {
+	--cards: 4;
+	--cardHeight: 47vh;
+	--cardTopPadding: 1.5em;
+	--cardMargin: 5vw;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#cards {
+	list-style: none;
+
+	padding-left: 0;
+
+	display: grid;
+
+	grid-template-columns: repeat(2, 1fr);
+
+	grid-template-rows: repeat(2, var(--cardHeight));
+
+	gap: var(--cardMargin);
+
+	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+
+	margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+	--index: 1;
+}
+#card2 {
+	--index: 2;
+}
+#card3 {
+	--index: 3;
+}
+#card4 {
+	--index: 4;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+
+
+@media (max-width: 700px){
+ .Portfolio-container{
+	margin-top: 56vh;
+ }
+
+ .OurPortfolio{
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	align-items: center;
+	color: #262262;
+ }
+ .Portfolio-container p{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	align-items: center;
+	color: #232323;
+ }
+#cards{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+ }
+}
