@@ -113,3 +113,10 @@ display: none;
       right: 0;
     }
   }
+
+  @media(max-height: 700px){
+    .header{
+margin-bottom: 30vh;
+    }
+
+  }
