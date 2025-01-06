@@ -23,8 +23,8 @@ export default function Navbar() {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             Home
@@ -33,8 +33,8 @@ export default function Navbar() {
             to="/Portfolio"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold   hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             Portfolio
@@ -43,8 +43,8 @@ export default function Navbar() {
             to="/Services"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold  hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             Services
@@ -53,8 +53,8 @@ export default function Navbar() {
             to="/About_Us"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold  hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             About Us
@@ -63,8 +63,8 @@ export default function Navbar() {
             to="/Articles"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold  hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             Articles
@@ -73,8 +73,8 @@ export default function Navbar() {
             to="/Contact_Us"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold  hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             Contact Us

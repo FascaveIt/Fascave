@@ -8,6 +8,12 @@
   position: fixed;
   z-index: 1001;
 }
+
+.navbar .item{
+  font-family: "Poppins", serif;
+  font-size: 16px;
+}
+
 @media (max-width: 700px) {
 
 .header{
