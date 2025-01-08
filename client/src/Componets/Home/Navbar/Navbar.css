@@ -1,11 +1,55 @@
 /* Responsive Styles */
 .header{
+  margin: 0;
+  padding: 0%;
   display: flex;
   justify-content: center;
 }
 .navbar{
 
-  position: fixed;
+   /* Responsive Styles */
+  .header{
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar{
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Add a background color */
+    padding: 10px 20px; /* Add some padding */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add a subtle shadow */
+  }
+  
+  .navbar .item{
+    margin: 0 10px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar .item {
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 0;
+    margin: 0;
+    }
+    .navbar .item {
+      font-size: 14px;
+    }
+  } position: fixed;
+
   z-index: 1001;
 }
 
@@ -24,8 +68,9 @@
     .navbar{
 
   z-index: 1001;
-  margin-bottom: 20vh;
+
   position: fixed;
+
  
     }
 

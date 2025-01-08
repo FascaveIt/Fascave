@@ -29,16 +29,7 @@ export default function Navbar() {
           >
             Home
           </NavLink>
-          <NavLink
-            to="/Portfolio"
-            className={({ isActive }) =>
-              isActive
-                ? "text-blue-950 font-semibold   hover:text-blue-900"
-                : "text-black font-medium  hover:text-blue-900"
-            }
-          >
-            Portfolio
-          </NavLink>
+
           <NavLink
             to="/Services"
             className={({ isActive }) =>

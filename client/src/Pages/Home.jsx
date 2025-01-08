@@ -17,7 +17,7 @@ export default function Home() {
       <OurPortfolioScrollRight />
       <WhyChooseUs />
       <OurPatners />
-      <ClientTestimonials />
+      {/* <ClientTestimonials /> */}
       <FAQ />
     </div>
   );

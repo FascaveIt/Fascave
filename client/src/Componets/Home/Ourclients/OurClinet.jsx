@@ -21,7 +21,6 @@ export default function OurClient() {
           <img src={ikontech} alt="Ikontech" className="h-16" />
           <img src={hiltopTusuki} alt="Hilltop Tsuki" className="h-16" />
           <img src={APVA_logo} alt="APVA Logo" className="h-16 mr-4" />
-          <img src={FasCave} alt="FasCave" className="h-16" />
 
           <img src={foodlex} alt="Foodlex" className="h-16" />
           <img src={ikontech} alt="Ikontech" className="h-16" />

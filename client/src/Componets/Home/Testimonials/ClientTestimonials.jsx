@@ -9,15 +9,9 @@ export default function ClientTestimonials() {
       para: "Superb And Efficient Work. They Developed An Android App For Our Community Directory. We Are Very Happy With The Finished Product. Well Designed, Lots Of Features, Top Of The Line Product",
       name: "Prayesh Wankhade",
       position: "Founder (Fast Food)",
-      image: "https://via.placeholder.com/64?text=Image+1",
+      image: "../../../Asset/testimonialclient/Prayesh.png",
     },
-    {
-      id: 2,
-      para: "They provided excellent service and delivered the project on time. The app design and functionality exceeded our expectations!",
-      name: "John Doe",
-      position: "CEO (Tech Solutions)",
-      image: "https://via.placeholder.com/64?text=Image+2",
-    },
+
     {
       id: 3,
       para: "The team did an amazing job on our platform. It’s user-friendly, feature-packed, and well-designed. Highly recommended!",
