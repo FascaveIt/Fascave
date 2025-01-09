@@ -1,0 +1,134 @@
+.contactContainer {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 20px 80px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 10vh;
+  }
+  
+  .heading {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #262262;
+  }
+  
+  .infoSection {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .infoItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .par {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .icon {
+    display: flex;
+    font-size: 30px;
+    color: #262262;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    line-height: 34px;
+  }
+  
+  .subHeading {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    color: gray;
+  }
+  
+  .contactDetail {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  
+  .formSection {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputFull {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .contactButton {
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+
+  
+ 
+
+    .contactContainer {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .formSection{
+        order: 1;
+    }
+    .infoSection{
+        margin-top: 30px;
+        order: 2;
+    }
+    .services {
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 24px;
+    }
+    .inputFull, .textarea {
+      font-size: 14px;
+    }
+    .contactButton {
+      font-size: 16px;
+    }
+  }

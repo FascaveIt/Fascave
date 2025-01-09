@@ -16,19 +16,22 @@ const HeroSection = () => {
       </div>
       <div className="Details relative z-10 container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-16">
         <div className="information text-center lg:text-left max-w-xl">
-          <h1 className="h1 text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+          <h1 className="h1 font-bold text-gray-900 leading-tight mb-4">
             CHOOSE THE PERFECT{" "}
             <span className="span text-blue-500">WEBSITE DEVELOPMENT</span>{" "}
             PARTNER WITH CONFIDENCE
           </h1>
-          <p className="p text-gray-600 text-lg leading-relaxed mb-6 ">
+          <p className="p text-gray-600  leading-relaxed mb-6 ">
             At Fascave, We Deliver Innovative Technology Solutions That Drive
             Business Growth. From Web And Mobile App Development To Cutting-Edge
             Data Analytics, We’re Your Trusted Partner In Digital
             Transformation. Let’s Bring Your Ideas To Life With Precision,
             Creativity, And Expertise.
           </p>
-          <button className="button bg-blue-950 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold flex items-center gap-1">
+          <button
+            className="button bg-blue-950 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold flex items-center gap-1"
+            onClick={() => (window.location.href = "/contact")}
+          >
             <MdOutlineCallEnd className="call" />
             Book a Free Consultation
           </button>

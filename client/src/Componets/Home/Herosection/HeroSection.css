@@ -8,6 +8,18 @@
   opacity: 0.3;
  }
 
+
+ .information .h1{
+  font-family:"Poppins", serif;
+  font-size: 30px;
+ }
+
+ .information .p{
+  font-family:"Poppins", serif;
+  font-size: 16px;
+ }
+ 
+
 @keyframes rotate {
   0% {
     transform: translate(0%, 0%);

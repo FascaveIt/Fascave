@@ -3,7 +3,7 @@ import APVA_logo from "../../../Asset/imagesWeb/APVA_logo.png";
 import foodlex from "../../../Asset/imagesWeb/foodlex.png";
 import hiltopTusuki from "../../../Asset/imagesWeb/hiltopTusuki.png";
 import ikontech from "../../../Asset/imagesWeb/ikontech.png";
-import FasCave from "../../../Asset/imagesWeb/FasCave_Logo.png";
+import shipdartexpress from "../../../Asset/imagesWeb/shipdartexpress.png";
 import "./OurClient.css";
 export default function OurClient() {
   return (
@@ -21,13 +21,12 @@ export default function OurClient() {
           <img src={ikontech} alt="Ikontech" className="h-16" />
           <img src={hiltopTusuki} alt="Hilltop Tsuki" className="h-16" />
           <img src={APVA_logo} alt="APVA Logo" className="h-16 mr-4" />
-          <img src={FasCave} alt="FasCave" className="h-16" />
 
           <img src={foodlex} alt="Foodlex" className="h-16" />
           <img src={ikontech} alt="Ikontech" className="h-16" />
           <img src={hiltopTusuki} alt="Hilltop Tsuki" className="h-16" />
           <img src={APVA_logo} alt="APVA Logo" className="h-16 mr-4" />
-          <img src={FasCave} alt="FasCave" className="h-16" />
+          <img src={shipdartexpress} alt="APVA Logo" className="h-10 mr-4 " />
         </div>
       </div>
     </div>

@@ -23,28 +23,19 @@ export default function Navbar() {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             Home
           </NavLink>
-          <NavLink
-            to="/Portfolio"
-            className={({ isActive }) =>
-              isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
-            }
-          >
-            Portfolio
-          </NavLink>
+
           <NavLink
             to="/Services"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold  hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             Services
@@ -53,35 +44,36 @@ export default function Navbar() {
             to="/About_Us"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold  hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             About Us
           </NavLink>
           <NavLink
-            to="/Articles"
+            to="https://blog.fascave.com/"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold  hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
-            Articles
+            Blog
           </NavLink>
+
           <NavLink
-            to="/Contact_Us"
+            to="/contact"
             className={({ isActive }) =>
               isActive
-                ? "text-blue-950 font-semibold text-base underline hover:text-blue-700"
-                : "text-black font-medium text-base hover:text-blue-700"
+                ? "text-blue-950 font-semibold  hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
             }
           >
             Contact Us
           </NavLink>
         </div>
 
-        <NavLink to="/consultation" className="consultaion ml-4">
+        <NavLink to="/contact" className="consultaion ml-4">
           <button className="bg-blue-950 hover:bg-blue-800 text-white font-semibold text-sm py-2 px-6 rounded-full shadow">
             Book a Free Consultation
           </button>
