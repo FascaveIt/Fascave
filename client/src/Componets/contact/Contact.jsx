@@ -8,7 +8,7 @@ import "./contact.css";
 const Contact = () => {
   return (
     <>
-      <div className="container">
+      <div className="contactContainer">
         {/* Contact Information Section */}
         <div className="infoSection">
           <h2 className="heading">Contact Us</h2>
@@ -109,7 +109,7 @@ const Contact = () => {
                 <input type="checkbox" /> Power BI Visualization
               </label>
             </div>
-            <button type="submit" className="button">
+            <button type="submit" className="contactButton">
               Submit Form
             </button>
           </form>
