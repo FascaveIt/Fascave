@@ -61,7 +61,7 @@ export default function Navbar() {
             Articles
           </NavLink>
           <NavLink
-            to="/Contact_Us"
+            to="/Contact"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-950 font-semibold  hover:text-blue-900"
@@ -72,7 +72,7 @@ export default function Navbar() {
           </NavLink>
         </div>
 
-        <NavLink to="/consultation" className="consultaion ml-4">
+        <NavLink to="/contact" className="consultaion ml-4">
           <button className="bg-blue-950 hover:bg-blue-800 text-white font-semibold text-sm py-2 px-6 rounded-full shadow">
             Book a Free Consultation
           </button>

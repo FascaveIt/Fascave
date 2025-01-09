@@ -5,15 +5,11 @@
   display: flex;
   justify-content: center;
 }
+
 .navbar{
 
    /* Responsive Styles */
-  .header{
-    margin: 0;
-    padding: 0%;
-    display: flex;
-    justify-content: center;
-  }
+ 
   .navbar{
     position: fixed;
     z-index: 1001;
@@ -58,7 +54,7 @@
   font-size: 16px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
 .header{
     display: flex;
@@ -67,10 +63,9 @@
 
     .navbar{
 
-  z-index: 1001;
-
-  position: fixed;
-
+      z-index: 1001;
+      position: fixed;
+      top: 0%;
  
     }
 
@@ -165,9 +160,3 @@ display: none;
     }
   }
 
-  @media(max-height: 700px){
-    .header{
-margin-bottom: 30vh;
-    }
-
-  }
