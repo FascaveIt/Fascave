@@ -12,12 +12,42 @@ import { CiMail } from "react-icons/ci";
 import { GrMapLocation } from "react-icons/gr";
 
 const socialLinks = [
-  { icon: <FaFacebookF />, label: "Facebook", color: "text-black" },
-  { icon: <FaXTwitter />, label: "Twitter", color: "text-black" },
-  { icon: <TiSocialPinterest />, label: "Pinterest", color: "textblack" },
-  { icon: <FaLinkedinIn />, label: "LinkedIn", color: "text-black" },
-  { icon: <FaInstagram />, label: "Instagram", color: "text-black" },
-  { icon: <FaYoutube />, label: "YouTube", color: "text-black" },
+  {
+    icon: <FaFacebookF />,
+    label: "Facebook",
+    color: "text-black",
+    link: "https://www.facebook.com/fascaveit",
+  },
+  {
+    icon: <FaXTwitter />,
+    label: "Twitter",
+    color: "text-black",
+    link: "https://x.com/fascaveit",
+  },
+  {
+    icon: <TiSocialPinterest />,
+    label: "Pinterest",
+    color: "textblack",
+    link: "https://in.pinterest.com/fascave/",
+  },
+  {
+    icon: <FaLinkedinIn />,
+    label: "LinkedIn",
+    color: "text-black",
+    link: "https://www.linkedin.com/company/fascave/",
+  },
+  {
+    icon: <FaInstagram />,
+    label: "Instagram",
+    color: "text-black",
+    link: "https://www.instagram.com/fascave.it/",
+  },
+  {
+    icon: <FaYoutube />,
+    label: "YouTube",
+    color: "text-black",
+    link: "https://www.youtube.com/@fascave.it.solutions",
+  },
 ];
 
 const Footer = () => {
@@ -39,10 +69,10 @@ const Footer = () => {
               Solutions
             </p>
             <div className="flex space-x-3 mt-4">
-              {socialLinks.map(({ icon, label, color }, index) => (
+              {socialLinks.map(({ icon, label, color, link }, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={link}
                   aria-label={label}
                   className={`bg-white ${color} rounded-full p-3 shadow-md hover:bg-gray-200 transition`}
                 >

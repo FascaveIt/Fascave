@@ -51,17 +51,18 @@ export default function Navbar() {
             About Us
           </NavLink>
           <NavLink
-            to="/Articles"
+            to="https://blog.fascave.com/"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-950 font-semibold  hover:text-blue-900"
                 : "text-black font-medium  hover:text-blue-900"
             }
           >
-            Articles
+            Blog
           </NavLink>
+
           <NavLink
-            to="/Contact"
+            to="/contact"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-950 font-semibold  hover:text-blue-900"

@@ -48,7 +48,7 @@ const Contact = () => {
             <span className="icon">Join Our Team</span>
             <h6 className="subHeading">Mail your resume to:</h6>
             <p className="contactDetail">
-              <CiMail /> hrmanager@fascaveit.com
+              <CiMail /> hr@fascave.com
             </p>
           </div>
         </div>

@@ -28,7 +28,10 @@ const HeroSection = () => {
             Transformation. Let’s Bring Your Ideas To Life With Precision,
             Creativity, And Expertise.
           </p>
-          <button className="button bg-blue-950 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold flex items-center gap-1">
+          <button
+            className="button bg-blue-950 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold flex items-center gap-1"
+            onClick={() => (window.location.href = "/contact")}
+          >
             <MdOutlineCallEnd className="call" />
             Book a Free Consultation
           </button>
