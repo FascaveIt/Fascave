@@ -7,6 +7,8 @@ import { collection, addDoc } from "firebase/firestore";
 import "./contact.css";
 
 import db from "../../../config/Config";
+
+import { toast } from "react-toastify";
 const Contact = () => {
   const [FirstName, setFirstName] = useState("");
   const [LastName, setLastName] = useState("");
@@ -25,9 +27,9 @@ const Contact = () => {
         PhoneNumber,
         Query,
       });
-      console.log("Contact added successfully!");
+      toast.success("Message Send successfully!");
     } catch (error) {
-      console.log(error);
+      toast.error("Error in Sendig: ", error);
     }
   };
   return (
