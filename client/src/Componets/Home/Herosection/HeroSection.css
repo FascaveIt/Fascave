@@ -18,7 +18,19 @@
   font-family:"Poppins", serif;
   font-size: 16px;
  }
- 
+
+ .button{
+
+transition: all 0.3s ease;
+
+.call{
+font-size: larger;
+transition: transform 0.5s ease;
+}}
+
+.button:hover .call {
+  transform: rotate(360deg); /* Rotate the icon on hover */
+}
 
 @keyframes rotate {
   0% {
@@ -89,9 +101,19 @@ padding: 10px 3px;
 font-weight: bold;
 font-size: 14.18px;
 margin: auto;
+transition: all 0.3s ease;
+
 .call{
   font-weight: bold;
 font-size: 24.18px;
+transition: transform 0.5s ease;
 }
+
+
+
 }
+.button:hover .call {
+  transform: rotate(360deg); /* Rotate the icon on hover */
+}
+
 }

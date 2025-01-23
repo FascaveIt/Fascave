@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./HeroSection.css"; // Include custom CSS for animation
 import background_animation from "../../../Asset/imagesWeb/background_animation.png"; // Import background animation image
 import animati_image from "../../../Asset/imagesWeb/animati_image.png"; // Import background animation image
 import { MdOutlineCallEnd } from "react-icons/md";
-
+import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
+  const navigate = useNavigate();
+  const [textIndex, setTextIndex] = useState(0);
+  const [fade, setFade] = useState(true); // State to control fade animation
+
+  const texts = ["Website Development", "App Development", "SEO Optimization"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false); // Start fade-out transition
+      setTimeout(() => {
+        setTextIndex((prevIndex) => (prevIndex + 1) % texts.length); // Update text
+        setFade(true); // Start fade-in transition
+      }, 500); // Allow fade-out to complete before updating text
+    }, 3000); // Change text every 3 seconds (including fade transition time)
+
+    return () => clearInterval(interval); // Clean up interval on component unmount
+  }, [texts.length]);
+
   return (
     <div className="Hero relative bg-white  m-auto h-screen flex items-center justify-center ">
       <div className="animation absolute inset-0 bg-animation z-0">
@@ -18,7 +36,13 @@ const HeroSection = () => {
         <div className="information text-center lg:text-left max-w-xl">
           <h1 className="h1 font-bold text-gray-900 leading-tight mb-4">
             CHOOSE THE PERFECT{" "}
-            <span className="span text-blue-500">WEBSITE DEVELOPMENT</span>{" "}
+            <span
+              className={`span text-blue-500 transition-opacity duration-500 ${
+                fade ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {texts[textIndex]}
+            </span>{" "}
             PARTNER WITH CONFIDENCE
           </h1>
           <p className="p text-gray-600  leading-relaxed mb-6 ">
@@ -30,7 +54,7 @@ const HeroSection = () => {
           </p>
           <button
             className="button bg-blue-950 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold flex items-center gap-1"
-            onClick={() => (window.location.href = "/contact")}
+            onClick={() => navigate("/contact")}
           >
             <MdOutlineCallEnd className="call" />
             Book a Free Consultation

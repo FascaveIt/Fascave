@@ -28,6 +28,11 @@ const Contact = () => {
         Query,
       });
       toast.success("Message Send successfully!");
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setPhoneNumber("");
+      setQuery("");
     } catch (error) {
       toast.error("Error in Sendig: ", error);
     }
