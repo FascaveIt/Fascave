@@ -3,8 +3,9 @@ import "./HeroSection.css"; // Include custom CSS for animation
 import background_animation from "../../../Asset/imagesWeb/background_animation.png"; // Import background animation image
 import animati_image from "../../../Asset/imagesWeb/animati_image.png"; // Import background animation image
 import { MdOutlineCallEnd } from "react-icons/md";
-
+import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="Hero relative bg-white  m-auto h-screen flex items-center justify-center ">
       <div className="animation absolute inset-0 bg-animation z-0">
@@ -30,7 +31,7 @@ const HeroSection = () => {
           </p>
           <button
             className="button bg-blue-950 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold flex items-center gap-1"
-            onClick={() => (window.location.href = "/contact")}
+            onClick={() => navigate("/contact")}
           >
             <MdOutlineCallEnd className="call" />
             Book a Free Consultation
