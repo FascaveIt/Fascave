@@ -22,7 +22,18 @@ const FAQ = () => {
     "How can I get in touch with Fascave IT Solutions?",
   ];
 
-  const Answer = [""];
+  const answers = [
+    "We provide a range of services, including website development, mobile app development, SEO, digital marketing, and IT consulting.",
+    "We analyze your business goals and implement the latest technologies to streamline your operations, improve efficiency, and enhance customer experiences.",
+    "Yes, we specialize in creating customized websites tailored to your specific requirements and business needs.",
+    "We use modern technologies such as React, Node.js, Angular, Flutter, and more to deliver cutting-edge web and mobile applications.",
+    "Our SEO service involves optimizing your website for search engines by using targeted keywords, improving site structure, and creating quality content to enhance visibility.",
+    "Yes, we love working with startups! We provide tailored solutions to help them establish their digital presence and scale effectively.",
+    "Our process includes requirement analysis, project planning, design, development, testing, deployment, and support.",
+    "The cost depends on various factors like project complexity, features, and timeline. Contact us for a detailed quote based on your requirements.",
+    "Yes, we offer comprehensive support and maintenance services to ensure your project runs smoothly post-completion.",
+    "You can reach out to us through our contact form on our website, via email, or by calling our customer support team.",
+  ];
 
   return (
     <div className="max-w-4xl mx-auto p-6 font-poppins">
@@ -54,7 +65,7 @@ const FAQ = () => {
             </button>
             {activeIndex === index && (
               <div className="px-4 py-3 bg-white text-gray-700 shadow-inner">
-                <p>Answer to "{faq}" goes here.</p>
+                <p>{answers[index]}</p>
               </div>
             )}
           </div>

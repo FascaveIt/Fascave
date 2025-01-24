@@ -5,7 +5,7 @@ import { CiMail } from "react-icons/ci";
 import FAQ from "../Home/Faq";
 import { collection, addDoc } from "firebase/firestore";
 import "./contact.css";
-
+import { useNavigate } from "react-router-dom";
 import db from "../../../config/Config";
 
 import { toast } from "react-toastify";
@@ -16,6 +16,7 @@ const Contact = () => {
   const [PhoneNumber, setPhoneNumber] = useState("");
   const [Query, setQuery] = useState("");
 
+  const navigate = useNavigate();
   const contacthandler = async (e) => {
     e.preventDefault();
 
@@ -33,6 +34,7 @@ const Contact = () => {
       setEmail("");
       setPhoneNumber("");
       setQuery("");
+      navigate("/");
     } catch (error) {
       toast.error("Error in Sendig: ", error);
     }
