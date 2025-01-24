@@ -74,7 +74,7 @@ export default function Navbar() {
         </div>
 
         <NavLink to="/contact" className="consultaion ml-4">
-          <button className="bg-blue-950 hover:bg-blue-800 text-white font-semibold text-sm py-2 px-6 rounded-full shadow">
+          <button className="bg-blue-950 hover:bg-[#666c81] text-white font-semibold text-sm py-2 px-6 rounded-full shadow">
             Book a Free Consultation
           </button>
         </NavLink>
