@@ -54,7 +54,7 @@ const Contact = () => {
             </span>
             <p className="par">
               First Floor, Govind Complex, B, 127, Pote Patil Rd, Amravati,
-              Maharashtra 44460
+              Maharashtra 444604
             </p>
           </div>
           {/* Call us */}
@@ -72,7 +72,7 @@ const Contact = () => {
             <span className="icon">Email Us</span>
             <h6 className="subHeading">Mail our team Mon-Fri 10Am to 7Pm</h6>
             <p className="contactDetail">
-              <CiMail /> contact@fascaveit.com
+              <CiMail /> contact@fascave.com
             </p>
           </div>
 

@@ -10,6 +10,8 @@ import "react-toastify/dist/ReactToastify.css";
 import AdminData from "./Componets/AdminSection/AdminData.jsx";
 import Services from "./Pages/Services.jsx";
 import About_Us from "./Pages/About_Us.jsx";
+
+import HeroSec from "./Componets/Home/heroSec/HeroSec.jsx";
 const router = createBrowserRouter([
   {
     path: "",
@@ -20,8 +22,10 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+
       { path: "/services", element: <Services /> },
       { path: "/about_us", element: <About_Us /> },
+      { path: "/herosec", element: <HeroSec /> },
 
       {
         path: "/Admin/utkarsh",
