@@ -19,8 +19,8 @@ export default function Navbar() {
         </NavLink>
 
         <div className={`item flex space-x-6 ${menuActive ? "active" : ""}`}>
-          <NavLink
-            to="/"
+          <a
+            href="/"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-950 font-semibold hover:text-blue-900"
@@ -28,10 +28,10 @@ export default function Navbar() {
             }
           >
             Home
-          </NavLink>
+          </a>
 
-          <NavLink
-            to="/Services"
+          <a
+            href="/Services"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-950 font-semibold  hover:text-blue-900"
@@ -39,9 +39,9 @@ export default function Navbar() {
             }
           >
             Services
-          </NavLink>
-          <NavLink
-            to="/About_Us"
+          </a>
+          <a
+            href="/About_Us"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-950 font-semibold  hover:text-blue-900"
@@ -49,9 +49,9 @@ export default function Navbar() {
             }
           >
             About Us
-          </NavLink>
-          <NavLink
-            to="https://blog.fascave.com/"
+          </a>
+          <a
+            href="https://blog.fascave.com/"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-950 font-semibold  hover:text-blue-900"
@@ -59,10 +59,20 @@ export default function Navbar() {
             }
           >
             Blog
-          </NavLink>
+          </a>
+          <a
+            href="https://jobs.fascave.com/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-950 font-semibold  hover:text-blue-900"
+                : "text-black font-medium  hover:text-blue-900"
+            }
+          >
+            Careers
+          </a>
 
-          <NavLink
-            to="/contact"
+          <a
+            href="/contact"
             className={({ isActive }) =>
               isActive
                 ? "text-blue-950 font-semibold  hover:text-blue-900"
@@ -70,7 +80,7 @@ export default function Navbar() {
             }
           >
             Contact Us
-          </NavLink>
+          </a>
         </div>
 
         <NavLink to="/contact" className="consultaion ml-4">
