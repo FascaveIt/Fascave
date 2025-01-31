@@ -10,6 +10,9 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"], // Add Poppins as a custom font
       },
+      screens: {
+        xs: "300px", // Custom breakpoint for <600px screens
+      },
     },
   },
   plugins: [],

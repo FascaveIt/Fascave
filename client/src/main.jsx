@@ -12,6 +12,7 @@ import Services from "./Pages/Services.jsx";
 import About_Us from "./Pages/About_Us.jsx";
 
 import HeroSec from "./Componets/Home/heroSec/HeroSec.jsx";
+import NotFound from "./Pages/NotFound.jsx";
 const router = createBrowserRouter([
   {
     path: "",
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
         path: "/Admin/utkarsh",
         element: <AdminData />,
       },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);
