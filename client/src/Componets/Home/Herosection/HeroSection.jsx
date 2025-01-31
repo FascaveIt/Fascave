@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./HeroSection.css"; // Include custom CSS for animation
 import background_animation from "../../../Asset/imagesWeb/background_animation.png"; // Import background animation image
 import animati_image from "../../../Asset/imagesWeb/animati_image.png"; // Import background animation image
-import { MdOutlineCallEnd } from "react-icons/md";
+
 import { useNavigate } from "react-router-dom";
+import Button from "../../Button/Button";
 const HeroSection = () => {
   const navigate = useNavigate();
   const [textIndex, setTextIndex] = useState(0);
@@ -52,13 +53,7 @@ const HeroSection = () => {
             Transformation. Let’s Bring Your Ideas To Life With Precision,
             Creativity, And Expertise.
           </p>
-          <button
-            className="button bg-blue-950 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold flex items-center gap-1"
-            onClick={() => navigate("/contact")}
-          >
-            <MdOutlineCallEnd className="call" />
-            Book a Free Consultation
-          </button>
+          <Button />
         </div>
 
         {/* Illustration Section */}
