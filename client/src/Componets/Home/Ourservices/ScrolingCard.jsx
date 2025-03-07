@@ -2,11 +2,11 @@ import React from "react";
 import "./ScrolingCard.css";
 import CustomWebsiteDevelopmentCard from "../CustomWebsiteDevelopmentCard";
 import app from "../../../Asset/imagesWeb/scrolingCard/Rectangle1.png";
-import website from "../../../Asset/imagesWeb/scrolingCard/Rectangle2.png";
+import digital from "../../../Asset/imagesWeb/scrolingCard/Rectangle2.png";
 import whatapp from "../../../Asset/imagesWeb/scrolingCard/Rectangle3.png";
 import anylesis from "../../../Asset/imagesWeb/scrolingCard/Rectangle4.png";
 import bigData from "../../../Asset/imagesWeb/scrolingCard/Rectangle5.png";
-import digital from "../../../Asset/imagesWeb/scrolingCard/Rectangle6.png";
+import website from "../../../Asset/imagesWeb/scrolingCard/Rectangle6.png";
 
 export default function ScrolingCard() {
   const cardDetail = [
@@ -85,12 +85,12 @@ export default function ScrolingCard() {
   ];
 
   return (
-    <div>
-      <h1 className="ourservices text-center text-3xl font-bold text-blue-950 mb-8">
+    <div className="font mt-20">
+      <h1 className="ourservices text-center text-[54px] font-semibold text-[#262262] mb-8">
         OUR SERVICES
       </h1>
 
-      <p className="ourp w-1/2 m-auto text-center  text-gray-600 mb-8">
+      <p className="ourp w-1/2 m-auto text-center  text-[#232323] mb-8 text-[24px] font">
         Discover our outstanding expertise in delivering services across va
         diverse range of dynamic industries
       </p>

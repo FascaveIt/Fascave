@@ -7,7 +7,7 @@ import Home from "./Pages/Home.jsx";
 import Contact from "./Componets/contact/Contact.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AdminData from "./Componets/AdminSection/AdminData.jsx";
+
 import Services from "./Pages/Services.jsx";
 import About_Us from "./Pages/About_Us.jsx";
 
@@ -28,10 +28,6 @@ const router = createBrowserRouter([
       { path: "/about_us", element: <About_Us /> },
       { path: "/herosec", element: <HeroSec /> },
 
-      {
-        path: "/Admin/utkarsh",
-        element: <AdminData />,
-      },
       { path: "*", element: <NotFound /> },
     ],
   },

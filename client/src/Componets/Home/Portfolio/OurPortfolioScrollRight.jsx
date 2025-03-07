@@ -1,6 +1,6 @@
 import React from "react";
 import "./scrolingcardRight.css";
-
+import '../../../App.css'
 import image1 from "../../../Asset/imagesWeb/OurProtfolio/Rectangle6.png";
 import image2 from "../../../Asset/imagesWeb/OurProtfolio/Rectangle7.png";
 import image3 from "../../../Asset/imagesWeb/OurProtfolio/Rectangle8.png";
@@ -34,12 +34,12 @@ export default function OurPortfolioScrollRight() {
   ];
 
   return (
-    <div className="Portfolio-container mt-36">
-      <h1 className="OurPortfolio text-center text-3xl font-bold text-blue-950 mb-8">
+    <div className="Portfolio-container mt-36 font">
+      <h1 className="OurPortfolio text-center text-[54px] font-semibold text-[#262262] mb-8">
         OUR PORTFOLIO
       </h1>
 
-      <p className="w-1/2 m-auto text-center text-xl text-gray-600 mb-8">
+      <p className="w-1/2 m-auto text-center text-[24px] text-[#232323] mb-8 font">
         Discover our outstanding expertise in delivering services across va
         diverse range of dynamic industries
       </p>

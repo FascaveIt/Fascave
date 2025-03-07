@@ -12,15 +12,24 @@ import HeroSec from "../Componets/Home/heroSec/HeroSec";
 export default function Home() {
   return (
     <div>
-      <HeroSection />
+     <div>  <HeroSection /></div>
+    
       {/* <HeroSec /> */}
-      <OurClient />
-      <ScrolingCard />
-      <OurPortfolioScrollRight />
-      <WhyChooseUs />
-      <OurPatners />
+      <div>  <OurClient /></div>
+    
+      <div><ScrolingCard /></div>
+      <div><OurPortfolioScrollRight /></div>
+      
+      <div>   <WhyChooseUs /></div>
+   
+
+      <div><OurPatners /></div>
+      
       {/* <ClientTestimonials /> */}
+      <div>
       <FAQ />
+      </div>
+
     </div>
   );
 }
