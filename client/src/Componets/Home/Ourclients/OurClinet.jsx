@@ -4,6 +4,9 @@ import foodlex from "../../../Asset/imagesWeb/foodlex.png";
 import hiltopTusuki from "../../../Asset/imagesWeb/hiltopTusuki.png";
 import ikontech from "../../../Asset/imagesWeb/ikontech.png";
 import shipdartexpress from "../../../Asset/imagesWeb/shipdartexpress.png";
+import piotexventures from '../../../Asset/imagesWeb/Piotex-Ventures.png'
+import piotexindustries from '../../../Asset/imagesWeb/PiotexIndustries.png'
+
 import "./OurClient.css";
 export default function OurClient() {
   return (
@@ -27,6 +30,10 @@ export default function OurClient() {
           <img src={hiltopTusuki} alt="Hilltop Tsuki" className="h-16" />
           <img src={APVA_logo} alt="APVA Logo" className="h-16 mr-4" />
           <img src={shipdartexpress} alt="APVA Logo" className="h-10 mr-4 " />
+          <img src={piotexventures} alt="APVA Logo" className="h-10 mr-4 " />
+          <img src={piotexindustries} alt="APVA Logo" className="h-7 mr-4 " />
+
+
         </div>
       </div>
     </div>
