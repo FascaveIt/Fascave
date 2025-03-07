@@ -8,11 +8,12 @@ import piotexventures from '../../../Asset/imagesWeb/Piotex-Ventures.png'
 import piotexindustries from '../../../Asset/imagesWeb/PiotexIndustries.png'
 
 import "./OurClient.css";
+import "../../../App.css"
 export default function OurClient() {
   return (
-    <div className="ourclients flex-col justify-center bg-white mb-10 ">
+    <div className="ourclients flex-col justify-center bg-white mb-10 font ">
       {/* Section Title */}
-      <h1 className="text-center text-3xl font-bold text-blue-950 mb-8">
+      <h1 className="text-center text-[54px] font-semibold text-[#262262] mb-8">
         OUR CLIENTS
       </h1>
 

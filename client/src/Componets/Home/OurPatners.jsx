@@ -5,18 +5,16 @@ import meta from '../../Asset/imagesWeb/patners/meta.png';
 import Microsoft_Azure from '../../Asset/imagesWeb/patners/Microsoft_Azure.png';
 import Microsoft_FasCave from '../../Asset/imagesWeb/patners/Microsoft_FasCave.png';
 
-
+import '../../App.css'
 // ... existing imports ...
 
 export default function OurPatners() {
   return (
-    <div className="flex-col justify-center bg-white py-6 sm:py-10">
+    <div className="flex-col justify-center bg-white py-6 sm:py-10 font">
       
-      <h1 className="text-center text-2xl sm:text-3xl font-bold text-blue-950 mb-4 sm:mb-8">
-        OUR PATNERS
-      </h1>
+      <h2 className="text-[54px] text-center font-semibold text-[#262262] mb-4">OUR GTM PARTNERS</h2>
 
-      <p className="w-[90%] sm:w-1/2 m-auto text-center text-lg sm:text-[-12px] text-gray-600 mb-4 sm:mb-8">
+      <p className="w-full sm:w-1/2 m-auto text-center text-[20px] text-[#232323] mb-8">
         Our strategic partners help us deliver unmatched business value and unique experiences
       </p>
 

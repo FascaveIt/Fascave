@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { RiArrowUpSLine } from "react-icons/ri";
-
+import '../../App.css'
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -36,11 +36,11 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-6 font-poppins">
-      <h2 className="text-2xl font-bold text-center mb-4 text-purpleText">
+    <div className="max-w-4xl m-auto p-6 font-poppins font">
+     <h2 className="text-[44px] text-center font-semibold text-[#262262] mb-4">
         FREQUENTLY ASKED QUESTIONS
       </h2>
-      <p className="text-center text-gray-600 mb-6 sm:text-base text-[16px]">
+      <p className="text-center text-[#232323] mb-6 sm:text-base text-[24px]">
         Our Frequently Asked Questions Are Designed To Provide Quick, Insightful
         Solutions To Your Queries.
       </p>
