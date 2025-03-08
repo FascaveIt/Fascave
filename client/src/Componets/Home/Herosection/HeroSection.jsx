@@ -28,8 +28,11 @@ const [contact, setContact] = useState(false);
   return (
 
     <>
-      {contact && (  <div className="absolute top-[120px] left-[27vw] z-50"><ContactFrom setContact={setContact}/></div>)
-    }   
+      {contact && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 mt-10">
+          <ContactFrom setContact={setContact}/>
+        </div>
+      )}   
     <div className="Hero relative bg-white  m-auto h-screen flex items-center justify-center ">
       <div className="animation absolute inset-0 bg-animation z-0">
         <img

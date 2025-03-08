@@ -90,6 +90,7 @@
   }
   
   .contactButton {
+    width: 100%;
     padding: 10px 20px;
     border: 1px solid #262262;
     background-color: transparent;
