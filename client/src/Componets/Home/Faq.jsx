@@ -36,11 +36,11 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="max-w-4xl m-auto p-6 font-poppins font">
-     <h2 className="text-[44px] text-center font-semibold text-[#262262] mb-4">
+    <div className="max-w-4xl m-auto p-6 font-poppins font mt-6">
+     <h2 className="FAQ ">
         FREQUENTLY ASKED QUESTIONS
       </h2>
-      <p className="text-center text-[#232323] mb-6 sm:text-base text-[24px]">
+      <p className="FAQP ">
         Our Frequently Asked Questions Are Designed To Provide Quick, Insightful
         Solutions To Your Queries.
       </p>
@@ -54,7 +54,7 @@ const FAQ = () => {
               onClick={() => toggleFAQ(index)}
               className="w-full text-left px-4 py-3 flex justify-between items-center bg-white"
             >
-              <span className="font-medium">{`Q${index + 1}. ${faq}`}</span>
+              <span className="  faqtext">{`Q${index + 1}. ${faq}`}</span>
               <span className="text-xl text-purpleText font-bold">
                 {activeIndex === index ? (
                   <RiArrowUpSLine />
@@ -64,7 +64,7 @@ const FAQ = () => {
               </span>
             </button>
             {activeIndex === index && (
-              <div className="px-4 py-3 bg-white text-gray-700 shadow-inner">
+              <div className=" inputOpentext">
                 <p>{answers[index]}</p>
               </div>
             )}
