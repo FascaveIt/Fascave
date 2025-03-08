@@ -35,11 +35,11 @@ export default function OurPortfolioScrollRight() {
 
   return (
     <div className="Portfolio-container mt-36 font">
-      <h1 className="OurPortfolio text-center text-[54px] font-semibold text-[#262262] mb-8">
+      <h1 className="OurPortfolio font">
         OUR PORTFOLIO
       </h1>
 
-      <p className="w-1/2 m-auto text-center text-[24px] text-[#232323] mb-8 font">
+      <p className=" font">
         Discover our outstanding expertise in delivering services across va
         diverse range of dynamic industries
       </p>
