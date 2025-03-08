@@ -7,7 +7,7 @@ import whatapp from "../../../Asset/imagesWeb/scrolingCard/Rectangle3.png";
 import anylesis from "../../../Asset/imagesWeb/scrolingCard/Rectangle4.png";
 import bigData from "../../../Asset/imagesWeb/scrolingCard/Rectangle5.png";
 import website from "../../../Asset/imagesWeb/scrolingCard/Rectangle6.png";
-
+import "../../../App.css"
 export default function ScrolingCard() {
   const cardDetail = [
     {
@@ -86,11 +86,11 @@ export default function ScrolingCard() {
 
   return (
     <div className="font mt-20">
-      <h1 className="ourservices text-center text-[54px] font-semibold text-[#262262] mb-8">
+      <h1 className="ourservices font">
         OUR SERVICES
       </h1>
 
-      <p className="ourp w-1/2 m-auto text-center  text-[#232323] mb-8 text-[24px] font">
+      <p className="ourp font">
         Discover our outstanding expertise in delivering services across va
         diverse range of dynamic industries
       </p>

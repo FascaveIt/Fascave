@@ -45,6 +45,24 @@
 	padding-top: calc(var(--index) * var(--cardTopPadding));
 }
 
+.ourservices{
+	/* text-center text-[54px] font-semibold text-[#262262] mb-8 */
+
+	margin-bottom: 32px;
+	font-size: 54px;
+	font-weight: 600;
+	color: #262262;
+	text-align: center;
+}
+.ourp{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	color: #232323;
+	font-size: 24px;
+
+	/* w-1/2 m-auto text-center  text-[#232323] mb-8 text-[24px] */
+}
 
 @media (max-width: 700px) {
 
@@ -56,9 +74,13 @@
 	}
 	.ourp{
 		font-size: 16px;
-font-weight: lighter;
-align-items: center;
-font-family: "Manrope", serif;
+
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		color: #232323;
+
+
 
 	}
 	.card{
