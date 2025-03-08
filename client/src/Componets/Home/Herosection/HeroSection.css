@@ -32,6 +32,15 @@ transition: transform 0.5s ease;
   transform: rotate(360deg); /* Rotate the icon on hover */
 }
 
+
+.consultaion{
+  display: none;
+}
+
+
+
+
+
 @keyframes rotate {
   0% {
     transform: translate(0%, 0%);
@@ -91,7 +100,9 @@ transition: transform 0.5s ease;
 
     }
   }
- 
+ .consultaion{
+  display: block;
+ }
 .button{
   width: 251px;
   height: 44px;
