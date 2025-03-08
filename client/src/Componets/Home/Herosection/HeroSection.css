@@ -33,7 +33,7 @@ transition: transform 0.5s ease;
 }
 
 
-.consultaion{
+.herobutton{
   display: none;
 }
 
@@ -100,7 +100,7 @@ transition: transform 0.5s ease;
 
     }
   }
- .consultaion{
+ .herobutton{
   display: block;
  }
 .button{

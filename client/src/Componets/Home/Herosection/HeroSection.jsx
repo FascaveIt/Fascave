@@ -58,7 +58,7 @@ const [contact, setContact] = useState(false);
             Transformation. Let’s Bring Your Ideas To Life With Precision,
             Creativity, And Expertise.
           </p>
-          <button className="bg-blue-950 hover:bg-[#666c81] text-white font-semibold text-sm py-2 px-6 rounded-full shadow consultaion" onClick={()=> setContact(true)}>
+          <button className="bg-blue-950 hover:bg-[#666c81] text-white font-semibold text-sm py-2 px-6 rounded-full shadow herobutton" onClick={()=> setContact(true)}>
           Book a Free Consultation
         </button>
         </div>
