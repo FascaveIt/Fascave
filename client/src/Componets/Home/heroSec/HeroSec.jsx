@@ -67,11 +67,7 @@ const HeroSec = () => {
         At Fascave, We Deliver Innovative Technology Solutions That Drive
         Business Growth.
       </p>
-      <button onClick={() => navigate("/contact")} className="waitlist-btn">
-        <span>Book a Free Consultation</span>
-        <span className="arrow">→</span>
-      </button>
-
+   
       <div className="circles">
         {feedbacks.map((feedback, index) => (
           <div

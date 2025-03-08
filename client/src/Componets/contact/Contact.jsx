@@ -130,28 +130,7 @@ const Contact = () => {
               required
             ></textarea>
 
-            {/* Services Offered */}
-            <h3 className="par">Services Offered</h3>
-            <div className="services">
-              <label>
-                <input type="checkbox" /> Website Development
-              </label>
-              <label>
-                <input type="checkbox" /> Digital Marketing
-              </label>
-              <label>
-                <input type="checkbox" /> WhatsApp Business API
-              </label>
-              <label>
-                <input type="checkbox" /> Application Development
-              </label>
-              <label>
-                <input type="checkbox" /> Cloud Data Analytics
-              </label>
-              <label>
-                <input type="checkbox" /> Power BI Visualization
-              </label>
-            </div>
+          
             <button type="submit" className="contactButton">
               Submit Form
             </button>
