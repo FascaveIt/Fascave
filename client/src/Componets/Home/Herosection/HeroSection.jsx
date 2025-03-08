@@ -4,14 +4,15 @@ import background_animation from "../../../Asset/imagesWeb/background_animation.
 import animati_image from "../../../Asset/imagesWeb/animati_image.png"; // Import background animation image
 
 import { useNavigate } from "react-router-dom";
-import Button from "../../Button/Button";
+import Button from '../../Button/Button'
+import ContactFrom from "../../contact/ContactFrom";
 const HeroSection = () => {
   const navigate = useNavigate();
   const [textIndex, setTextIndex] = useState(0);
   const [fade, setFade] = useState(true); // State to control fade animation
 
   const texts = ["Website Development", "App Development", "SEO Optimization"];
-
+const [contact, setContact] = useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
       setFade(false); // Start fade-out transition
@@ -25,6 +26,13 @@ const HeroSection = () => {
   }, [texts.length]);
 
   return (
+
+    <>
+      {contact && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 mt-10">
+          <ContactFrom setContact={setContact}/>
+        </div>
+      )}   
     <div className="Hero relative bg-white  m-auto h-screen flex items-center justify-center ">
       <div className="animation absolute inset-0 bg-animation z-0">
         <img
@@ -53,7 +61,9 @@ const HeroSection = () => {
             Transformation. Let’s Bring Your Ideas To Life With Precision,
             Creativity, And Expertise.
           </p>
-          <Button />
+          <button className="bg-blue-950 hover:bg-[#666c81] text-white font-semibold text-sm py-2 px-6 rounded-full shadow herobutton" onClick={()=> setContact(true)}>
+          Book a Free Consultation
+        </button>
         </div>
 
         {/* Illustration Section */}
@@ -66,6 +76,8 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
+    </>
+
   );
 };
 

@@ -11,7 +11,6 @@ import "react-toastify/dist/ReactToastify.css";
 import Services from "./Pages/Services.jsx";
 import About_Us from "./Pages/About_Us.jsx";
 
-import HeroSec from "./Componets/Home/heroSec/HeroSec.jsx";
 import NotFound from "./Pages/NotFound.jsx";
 const router = createBrowserRouter([
   {
@@ -26,7 +25,7 @@ const router = createBrowserRouter([
 
       { path: "/services", element: <Services /> },
       { path: "/about_us", element: <About_Us /> },
-      { path: "/herosec", element: <HeroSec /> },
+
 
       { path: "*", element: <NotFound /> },
     ],
