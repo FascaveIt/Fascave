@@ -13,7 +13,6 @@ import FAQ from "../Componets/Home/Faq";
 export default function Home() {
   return (
     <div >
-     
    <div >  <HeroSection /></div>
     
       {/* <HeroSec /> */}
