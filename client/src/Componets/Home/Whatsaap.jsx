@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../../App.css'
  
-import whataap from "../../Asset/whatsapp.png"
+import whataap from "../../Asset/whatsaap.png"
 
 
 function Whatsaap() {

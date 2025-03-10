@@ -1,8 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Shield, Cpu, ArrowRight, Sparkles, LineChart, Rocket, Brain, Globe2 } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
+import {  Popover } from 'antd';
 function Hero() {
+ const content = (
+   <div className="flex flex-col space-y-2 p-4  rounded-lg font">
+    <Link to="/services/web-development" className="text-black hover:text-blue-950">Web Development</Link>
+    <Link to="/services/app-development" className="text-black hover:text-blue-950">App Development</Link>
+    <Link to="/services/digital-marketing" className="text-black hover:text-blue-950">Digital Marketing</Link>
+    <Link to="/services/cloud-data-analytics" className="text-black hover:text-blue-950">Cloud Data Analytics</Link>
+   </div>
+  );
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -141,7 +151,7 @@ function Hero() {
                   whileTap={{ scale: 0.95 }}
                   className="px-6 py-3 bg-white rounded-lg text-blue-600 font-semibold hover:bg-blue-50 transition-all border border-blue-200"
                 >
-                  Explore Services
+              <Popover content={content}>    Explore Services</Popover>
                 </motion.button>
               </motion.div>
             </div>
