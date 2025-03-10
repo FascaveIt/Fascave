@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./ScrolingCard.css";
 import CustomWebsiteDevelopmentCard from "../CustomWebsiteDevelopmentCard";
 import app from "../../../Asset/imagesWeb/scrolingCard/Rectangle1.png";
@@ -7,7 +8,8 @@ import whatapp from "../../../Asset/imagesWeb/scrolingCard/Rectangle3.png";
 import anylesis from "../../../Asset/imagesWeb/scrolingCard/Rectangle4.png";
 import bigData from "../../../Asset/imagesWeb/scrolingCard/Rectangle5.png";
 import website from "../../../Asset/imagesWeb/scrolingCard/Rectangle6.png";
-import "../../../App.css"
+import "../../../App.css";
+
 export default function ScrolingCard() {
   const cardDetail = [
     {
@@ -20,7 +22,7 @@ export default function ScrolingCard() {
         "Trusted by industries to deliver results that drive growth.",
       ],
       image: website,
-      bgColor: "yellow", // Yellow background
+      bgColor: "yellow",
     },
     {
       title: "Custom Application Development",
@@ -32,7 +34,7 @@ export default function ScrolingCard() {
         "Effortlessly integrating with your systems for smooth and efficient workflows.",
       ],
       image: app,
-      bgColor: "red", // Red background
+      bgColor: "red",
     },
     {
       title: "Digital Marketing Services",
@@ -44,7 +46,7 @@ export default function ScrolingCard() {
         "We transform insights into impactful campaigns that deliver results.",
       ],
       image: digital,
-      bgColor: "pink", // Pink background
+      bgColor: "pink",
     },
     {
       title: "WhatsApp Business API Services",
@@ -56,7 +58,7 @@ export default function ScrolingCard() {
         "Expand your business with flexible API features that grow with you.",
       ],
       image: whatapp,
-      bgColor: "orange", // Orange background
+      bgColor: "orange",
     },
     {
       title: "Power & BI Visualization Services",
@@ -68,7 +70,7 @@ export default function ScrolingCard() {
         "Deliver clear, actionable insights that drive business success.",
       ],
       image: bigData,
-      bgColor: "blue", // Blue background
+      bgColor: "blue",
     },
     {
       title: "Cloud Data Analytics Services",
@@ -80,24 +82,34 @@ export default function ScrolingCard() {
         "Custom strategies provide data solutions that fuel business growth.",
       ],
       image: anylesis,
-      bgColor: "green", // Green background
+      bgColor: "green",
     },
   ];
 
   return (
-    <div className="font mt-20">
-      <h1 className="ourservices font">
-        OUR SERVICES
-      </h1>
-
+    <motion.div 
+      className="font mt-20"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <h1 className="ourservices font">OUR SERVICES</h1>
       <p className="ourp font">
-        Discover our outstanding expertise in delivering services across va
+        Discover our outstanding expertise in delivering services across a
         diverse range of dynamic industries
       </p>
       <div className="container">
         <ul id="cards">
           {cardDetail.map((card, index) => (
-            <li className="card" key={index} id={`card${index + 1}`}>
+            <motion.li 
+              className="card"
+              key={index} 
+              id={`card${index + 1}`}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              whileHover={{ scale: 1.05 }}
+            >
               <CustomWebsiteDevelopmentCard
                 title={card.title}
                 description={card.description}
@@ -105,10 +117,10 @@ export default function ScrolingCard() {
                 image={card.image}
                 bgColor={card.bgColor}
               />
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
