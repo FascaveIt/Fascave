@@ -47,7 +47,26 @@
 	padding-top: calc(var(--index) * var(--cardTopPadding));
 }
 
+.OurPortfolio{
+	/* text-center text-[54px] font-semibold text-[#262262] mb-8 */
+	text-align: center;
+	font-size: 54px;
+	font-weight: 600;
+	color: #262262;
+	margin-bottom: 8px;
+}
 
+
+.Portfolio-container p{
+/* w-1/2 m-auto text-center text-[24px] text-[#232323] mb-8 */
+width: 50%;
+	margin: auto;
+	text-align: center;
+	font-size: 24px;
+	color: #232323;
+	margin-bottom: 8px;
+
+}
 
 @media (max-width: 700px){
  .Portfolio-container{
@@ -56,16 +75,15 @@
 
  .OurPortfolio{
 	font-size: 30px;
-	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
 	align-items: center;
 	color: #262262;
  }
  .Portfolio-container p{
 	font-size: 16px;
-	font-weight: 400;
-	font-family: 'Poppins', sans-serif;
-	align-items: center;
+	width: 80%;
+	margin: auto;
+	text-align: center;
 	color: #232323;
  }
 #cards{

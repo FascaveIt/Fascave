@@ -5,8 +5,8 @@ export default function WhyChooseUs() {
     <div className="bg-white w-3/4 m-auto py-16 font">
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h2 className="text-[54px] font-semibold text-[#262262] mb-4">WHY CHOOSE US</h2>
-        <p className="w-full sm:w-2/3 m-auto text-center text-[20px] text-[#232323] mb-8">
+        <h2 className="whyChoose">WHY CHOOSE US</h2>
+        <p className="whyChoosePara">
           Choose Us For Tailored IT Solutions That Drive Success, With Expert
           Professionals Dedicated To Your Business Growth.
         </p>

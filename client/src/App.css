@@ -1,3 +1,118 @@
 .font{
     font-family: "Poppins", serif;
   } 
+
+
+/* root css  */
+.whyChoose{
+  /* text-[54px] font-semibold text-[#262262] mb-4 */
+  font-size: 54px;
+  font-weight: 600;
+  color: #262262;
+  margin-bottom: 4px;
+  margin-top: 10rem;
+}
+.whyChoosePara{
+  /* w-full sm:w-2/3 m-auto text-center text-[20px] text-[#232323] mb-8 */
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #232323;
+  margin-bottom: 8px;
+}
+
+.OurPartners{
+  /* text-[54px] text-center font-semibold text-[#262262] mb-4 */
+  font-size: 54px;
+  text-align: center;
+  font-weight: 600;
+  color: #262262;
+  margin-bottom: 4px;
+}
+.OurPartnersPara{
+  /* w-full sm:w-1/2 m-auto text-center text-[20px] text-[#232323] mb-8 */
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #232323;
+  margin-bottom: 8px;
+
+}
+
+.FAQ{
+  /* text-[44px] text-center font-semibold text-[#262262] mb-4 */
+  font-size: 44px;
+  text-align: center;
+  font-weight: 600;
+  color: #262262;
+  margin-bottom: 4px;
+}
+.FAQP{
+  /* text-center text-[#232323] mb-6 sm:text-base text-[24px] */
+  text-align: center;
+  color: #232323;
+  margin-bottom: 6px;
+  font-size: 24px;
+}
+.inputOpentext{
+  /* px-4 py-3 bg-white text-gray-700 shadow-inner */
+  width: 100%;
+  padding: 4px;
+  padding: 3px;
+  background-color: white;
+  /* color: rgb(161, 158, 158); */
+  color: rgb(73, 73, 73);
+  box-shadow: inset;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .whyChoose{
+    /* text-[36px] */
+    margin-top: 0;
+    font-size: 36px;
+  }
+  .whyChoosePara{
+    /* text-[16px] */
+    font-size: 16px;
+  }
+
+  .OurPartners{
+    /* text-[36px] */
+    font-size: 36px;
+  }
+  .OurPartnersPara{
+    /* text-[16px] */
+    font-size: 16px;
+    margin: 20px 0;
+
+  }
+
+  .FAQ{
+    /* text-[36px] */
+    font-size: 36px;
+    
+  }
+  .FAQP{
+    /* text-[16px] */
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .inputOpentext{
+ font-size: 13px;
+
+  }
+  .faqtext{
+    /* text-[16px] */
+    font-size: 16px;
+  }
+}
+
+.circle{
+  animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+  from {top: 0px;}
+  to {top: 200px;}
+
+}

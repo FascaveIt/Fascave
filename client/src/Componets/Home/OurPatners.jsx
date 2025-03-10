@@ -12,9 +12,9 @@ export default function OurPatners() {
   return (
     <div className="flex-col justify-center bg-white py-6 sm:py-10 font">
       
-      <h2 className="text-[54px] text-center font-semibold text-[#262262] mb-4">OUR GTM PARTNERS</h2>
+      <h2 className="OurPartners">OUR GTM PARTNERS</h2>
 
-      <p className="w-full sm:w-1/2 m-auto text-center text-[20px] text-[#232323] mb-8">
+      <p className="OurPartnersPara ">
         Our strategic partners help us deliver unmatched business value and unique experiences
       </p>
 
