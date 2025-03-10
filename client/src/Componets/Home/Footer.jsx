@@ -10,7 +10,7 @@ import { TiSocialPinterest } from "react-icons/ti";
 import { FiPhoneCall } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
 import { GrMapLocation } from "react-icons/gr";
-
+import '../../App.css'
 const socialLinks = [
   {
     icon: <FaFacebookF />,
@@ -50,9 +50,10 @@ const socialLinks = [
   },
 ];
 
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-800 py-10">
+    <footer className="bg-gray-100 text-gray-800 py-10 font">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-14 ">
           {/* Company Description */}
