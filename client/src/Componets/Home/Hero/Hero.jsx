@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Code2, Shield, Cpu, ArrowRight, Sparkles, LineChart, Rocket, Brain, Globe2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {  Popover } from 'antd';
+import "../../../App.css"
 function Hero() {
  const content = (
    <div className="flex flex-col space-y-2 p-4  rounded-lg font">
@@ -64,7 +65,7 @@ function Hero() {
   };
 
   return (
-    <div className="min-h-screen bg-white overflow-hidden px-5">
+    <div className="min-h-screen bg-white overflow-hidden px-5 font">
       {/* Hero Section */}
       <div className="relative">
         {/* Animated Background Elements */}

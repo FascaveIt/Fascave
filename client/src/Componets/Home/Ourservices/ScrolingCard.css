@@ -48,7 +48,7 @@
 .ourservices{
 	/* text-center text-[54px] font-semibold text-[#262262] mb-8 */
 
-	margin-bottom: 32px;
+	
 	font-size: 54px;
 	font-weight: 600;
 	color: #262262;
@@ -58,8 +58,9 @@
 	width: 50%;
 	margin: auto;
 	text-align: center;
-	color: #232323;
-	font-size: 24px;
+	color: #4b5563;
+	font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */
 
 	/* w-1/2 m-auto text-center  text-[#232323] mb-8 text-[24px] */
 }
@@ -73,12 +74,14 @@
 		align-items: center;
 	}
 	.ourp{
-		font-size: 16px;
+		
 
 		width: 80%;
 		margin: auto;
 		text-align: center;
-		color: #232323;
+		color: #4b5563;
+	font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */
 
 
 
