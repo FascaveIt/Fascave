@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 import db from "../../../config/Config";
 import cross from '../../Asset/cross.svg'
 import { toast } from "react-toastify";
-function ContactFrom({ setContact }) {
+import {Modal} from "antd"
+function ContactFrom({ visible, onClose }) {
       const [FirstName, setFirstName] = useState("");
       const [LastName, setLastName] = useState("");
       const [Email, setEmail] = useState("");
@@ -37,12 +38,13 @@ function ContactFrom({ setContact }) {
         }
       };
   return (
-      <div className="w-full max-w-md mx-auto bg-white p-6 rounded-md shadow-md">
+    <Modal open={visible} onClose={onClose} closable={false} footer={null} >
+      <div className="flex justify-center items-center h-full">
        {/* Contact Form Section */}
         <div className="mb-6 w-[400px]">
          <div className='flex justify-between items-center mb-5'>
            <h2 className='text-blue-950 font-semibold text-2xl'>Contact</h2>
-           <button className='cursor-pointer' onClick={()=> setContact(false)}>
+           <button className='cursor-pointer' onClick={()=> onClose()}>
              <img src={cross} alt="close" />
            </button>
          </div> 
@@ -59,6 +61,7 @@ function ContactFrom({ setContact }) {
      
         </div>
       </div>
+      </Modal>
   )
 }
 export default ContactFrom
