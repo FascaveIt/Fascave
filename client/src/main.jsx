@@ -8,10 +8,14 @@ import Contact from "./Componets/contact/Contact.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import Services from "./Pages/Services.jsx";
+
 import About_Us from "./Pages/About_Us.jsx";
 
 import NotFound from "./Pages/NotFound.jsx";
+import WebDevService from './Pages/WebDevService.jsx';
+import AppDevService from './Pages/AppDevService.jsx';
+import DigitalMarketingService from './Pages/DigitalMarketingService.jsx';
+import CloudService from './Pages/CloudService.jsx';
 const router = createBrowserRouter([
   {
     path: "",
@@ -23,8 +27,14 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
 
-      { path: "/services", element: <Services /> },
+      
       { path: "/about_us", element: <About_Us /> },
+      { path: "/services/web-development", element: <WebDevService /> },
+      { path: "/services/app-development", element: <AppDevService /> },
+      { path: "/services/digital-marketing", element: <DigitalMarketingService /> },
+      { path: "/services/cloud-data-analytics", element: <CloudService /> },
+
+
 
 
       { path: "*", element: <NotFound /> },
