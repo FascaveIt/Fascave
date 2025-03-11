@@ -7,13 +7,16 @@ import HeroSection from "../Componets/Home/Herosection/HeroSection";
 import OurPortfolioScrollRight from "../Componets/Home/Portfolio/OurPortfolioScrollRight";
 import ScrolingCard from "../Componets/Home/Ourservices/ScrolingCard";
 import FAQ from "../Componets/Home/Faq";
+import Hero from "../Componets/Home/Hero/Hero";
 
 
 
 export default function Home() {
   return (
     <div >
-   <div >  <HeroSection /></div>
+   {/* <div >  <HeroSection /></div> */}
+
+   <div><Hero/></div>
     
       {/* <HeroSec /> */}
       <div>  <OurClient /></div>

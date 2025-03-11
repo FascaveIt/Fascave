@@ -1,6 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./scrolingcardRight.css";
-import '../../../App.css'
+import '../../../App.css';
 import image1 from "../../../Asset/imagesWeb/OurProtfolio/Rectangle6.png";
 import image2 from "../../../Asset/imagesWeb/OurProtfolio/Rectangle7.png";
 import image3 from "../../../Asset/imagesWeb/OurProtfolio/Rectangle8.png";
@@ -34,28 +35,38 @@ export default function OurPortfolioScrollRight() {
   ];
 
   return (
-    <div className="Portfolio-container mt-36 font">
-      <h1 className="OurPortfolio font">
-        OUR PORTFOLIO
-      </h1>
-
+    <motion.div 
+      className="Portfolio-container mt-36 font"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <h1 className="OurPortfolio font">OUR PORTFOLIO</h1>
       <p className=" font">
-        Discover our outstanding expertise in delivering services across va
+        Discover our outstanding expertise in delivering services across a
         diverse range of dynamic industries
       </p>
       <div className="container flex justify-center">
-        <ul id="cards" className="flex ">
+        <ul id="cards" className="flex">
           {cardDetails.map((card, index) => (
-            <li className="card w-full" key={index} id={`card${index + 1}`}>
+            <motion.li 
+              className="card w-full" 
+              key={index} 
+              id={`card${index + 1}`}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              whileHover={{ scale: 1.05 }}
+            >
               <ProductShowcaseCard
                 title={card.title}
                 description={card.description}
                 image={card.image}
               />
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }

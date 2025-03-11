@@ -1,10 +1,21 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import fasCaveLogo from "../../../Asset/imagesWeb/Fascave_Logo.png";
 import "./Navbar.css";
 import ContactFrom from "../../contact/ContactFrom";
-
+import {  Popover } from 'antd';
+import "../../../App.css"
 export default function Navbar() {
+
+  const content = (
+   <div className="flex flex-col space-y-2 p-4  rounded-lg font">
+    <Link to="/services/web-development" className="text-black hover:text-blue-950">Web Development</Link>
+    <Link to="/services/app-development" className="text-black hover:text-blue-950">App Development</Link>
+    <Link to="/services/digital-marketing" className="text-black hover:text-blue-950">Digital Marketing</Link>
+    <Link to="/services/cloud-data-analytics" className="text-black hover:text-blue-950">Cloud Data Analytics</Link>
+   </div>
+  );
+
   const [menuActive, setMenuActive] = useState(false);
 
   // Handle hamburger menu toggle
@@ -36,14 +47,14 @@ export default function Navbar() {
         </a>
 
         <a
-          href="/Services"
+          
           className={({ isActive }) =>
             isActive
               ? "text-blue-950 font-semibold  hover:text-blue-900"
               : "text-black font-medium  hover:text-blue-900"
           }
         >
-          Services
+       <Popover content={content}>Services</Popover>   
         </a>
         <a
           href="/About_Us"
