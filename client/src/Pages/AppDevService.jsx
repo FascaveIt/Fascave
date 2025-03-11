@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Smartphone,
   Tablet,
@@ -13,10 +13,12 @@ import {
   Code,
   Rocket
 } from 'lucide-react';
-
+import "../App.css"
+import ContactFrom from '../Componets/contact/ContactFrom';
 function AppDevService() {
+  const [isVisible,setIsVisible]=useState(false)
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white font">
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-purple-600 to-purple-700 text-white">
         <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent,black)] bg-black opacity-10"></div>
@@ -28,8 +30,8 @@ function AppDevService() {
             <p className="text-xl text-purple-100 mb-8 leading-relaxed">
               Transform your ideas into powerful mobile applications that users love
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-white text-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-colors">
-              Start Your App Project
+            <button className="inline-flex items-center px-8 py-4 bg-white text-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-colors" onClick={()=>setIsVisible(true)}>
+              Schedule Your Project
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
           </div>
@@ -163,13 +165,15 @@ function AppDevService() {
             <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
               Let's turn your app idea into reality with our expert development team
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-white text-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-colors">
+            <button className="inline-flex items-center px-8 py-4 bg-white text-purple-600 rounded-full font-semibold hover:bg-purple-50 transition-colors" onClick={()=> setIsVisible(true)}>
               Get Free Consultation
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
           </div>
         </div>
       </div>
+
+      <ContactFrom visible={isVisible} onClose={()=>setIsVisible(false)}/>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   TrendingUp,
   BarChart,
@@ -13,10 +13,12 @@ import {
   Code,
   Rocket
 } from 'lucide-react';
-
+import "../App.css"
+import ContactFrom from '../Componets/contact/ContactFrom';
 function DigitalMarketingService() {
+  const [isVisible, setIsVisible] = useState(false);
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white font">
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-green-600 to-green-700 text-white">
         <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent,black)] bg-black opacity-10"></div>
@@ -28,7 +30,7 @@ function DigitalMarketingService() {
             <p className="text-xl text-green-100 mb-8 leading-relaxed">
               Drive growth and engagement with data-driven digital marketing strategies
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-white text-green-600 rounded-full font-semibold hover:bg-green-50 transition-colors">
+            <button className="inline-flex items-center px-8 py-4 bg-white text-green-600 rounded-full font-semibold hover:bg-green-50 transition-colors" onClick={()=>setIsVisible(true)}>
               Boost Your Digital Presence
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
@@ -163,13 +165,14 @@ function DigitalMarketingService() {
             <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
               Let's create a digital marketing strategy that drives results
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-white text-green-600 rounded-full font-semibold hover:bg-green-50 transition-colors">
+            <button className="inline-flex items-center px-8 py-4 bg-white text-green-600 rounded-full font-semibold hover:bg-green-50 transition-colors" onClick={()=>setIsVisible(true)}>
               Get Free Strategy Session
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
           </div>
         </div>
       </div>
+      <ContactFrom visible={isVisible} onClose={()=>setIsVisible(false)}/>
     </div>
   );
 }

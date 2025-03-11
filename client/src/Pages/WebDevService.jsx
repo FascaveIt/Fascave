@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Globe,
   Code,
@@ -15,10 +15,13 @@ import {
   Shield,
   MessageSquare
 } from 'lucide-react';
+import ContactFrom from '../Componets/contact/ContactFrom';
+import "../App.css"
 
 function WebDevService() {
+  const [isVisible, setIsVisible] = useState(false);
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white font">
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent,black)] bg-black opacity-10"></div>
@@ -30,8 +33,12 @@ function WebDevService() {
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
               Creating powerful, scalable, and beautiful web experiences that drive business growth
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-colors">
-              Start Your Project
+
+
+              
+            <button className="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-colors" onClick={()=>setIsVisible(true)}
+            >
+              Schedule Your Project
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
           </div>
@@ -167,13 +174,17 @@ function WebDevService() {
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Let's create a website that perfectly represents your brand and drives results
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-colors">
+            <button className="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-full font-semibold hover:bg-blue-50 transition-colors" onClick={()=> setIsVisible(true)}>
               Get Free Consultation
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
           </div>
         </div>
       </div>
+
+
+
+      <ContactFrom visible={isVisible} onClose={()=>setIsVisible(false)} />
     </div>
   );
 }

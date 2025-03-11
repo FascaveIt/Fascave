@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Cloud,
   Database,
@@ -13,10 +13,13 @@ import {
   Code,
   Rocket
 } from 'lucide-react';
+import ContactFrom from '../Componets/contact/ContactFrom';
+import "../App.css"
 
 function CloudService() {
+    const [isVisible,setIsVisible]=useState(false)
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white font">
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-to-r from-cyan-600 to-cyan-700 text-white">
         <div className="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,transparent,black)] bg-black opacity-10"></div>
@@ -28,7 +31,7 @@ function CloudService() {
             <p className="text-xl text-cyan-100 mb-8 leading-relaxed">
               Scalable, secure, and reliable cloud infrastructure for your business
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-white text-cyan-600 rounded-full font-semibold hover:bg-cyan-50 transition-colors">
+            <button className="inline-flex items-center px-8 py-4 bg-white text-cyan-600 rounded-full font-semibold hover:bg-cyan-50 transition-colors" onClick={()=>setIsVisible(true)}>
               Explore Cloud Solutions
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
@@ -163,13 +166,15 @@ function CloudService() {
             <p className="text-xl text-cyan-100 mb-8 max-w-2xl mx-auto">
               Let's transform your business with our cloud solutions
             </p>
-            <button className="inline-flex items-center px-8 py-4 bg-white text-cyan-600 rounded-full font-semibold hover:bg-cyan-50 transition-colors">
+            <button className="inline-flex items-center px-8 py-4 bg-white text-cyan-600 rounded-full font-semibold hover:bg-cyan-50 transition-colors" onClick={()=> setIsVisible(true)}>
               Schedule Consultation
               <ArrowRight className="w-5 h-5 ml-2" />
             </button>
           </div>
         </div>
       </div>
+
+      <ContactFrom visible={isVisible} onClose={()=> setIsVisible(false)} />
     </div>
   );
 }
