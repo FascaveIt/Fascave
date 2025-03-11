@@ -118,7 +118,7 @@ function Hero() {
                 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
               >
                 Innovative
-                <span className="block mt-2 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                <span className="block mt-2 bg-gradient-to-r from-blue-900 to-blue-950 bg-clip-text text-transparent">
                   Technology Solutions
                 </span>
               </motion.h1>

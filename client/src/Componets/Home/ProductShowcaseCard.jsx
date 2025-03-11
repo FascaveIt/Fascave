@@ -15,7 +15,7 @@ function ProductShowcaseCard(props) {
         <h2 className="text-[26px] md:text-3xl font-medium text-[#262262] mb-2">
           {props.title}
         </h2>
-        <p className="text-[18px] font-normal text-[#232323] text-center">{props.description}</p>
+        <p className="text-[18px] font-normal text-[#4b5563] text-center">{props.description}</p>
       </div>
     </div>
   );

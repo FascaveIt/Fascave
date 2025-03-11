@@ -7,13 +7,13 @@ function CustomWebsiteDevelopmentCard(props) {
         <h2 className="text-2xl md:text-4xl font-medium text-[#262262]">
           {props.title}
         </h2>
-        <p className="mt-2 text-base md:text-lg text-[#232323]">
+        <p className="mt-2 text-base md:text-lg text-[#4b5563]">
           {props.description}
         </p>
         <hr className="my-4 w-full border-t-4 border-blue-600" />
         <ul className="mt-4 space-y-2 list-disc list-inside">
           {props.bulletPoints.map((item, index) => (
-            <li key={index} className="flex items-center text-base md:text-lg text-[#232323]">
+            <li key={index} className="flex items-center text-base md:text-lg text-[#4b5563]">
               {item}
             </li>
           ))}
