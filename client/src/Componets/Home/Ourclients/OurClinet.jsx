@@ -11,14 +11,14 @@ import "./OurClient.css";
 import "../../../App.css"
 export default function OurClient() {
   return (
-    <div className="ourclients flex-col justify-center bg-white mb-10 font ">
+    <div className="ourclients flex-col justify-center bg-white mb-10 font mt-20">
       {/* Section Title */}
       <h1 className="text-center text-[54px] font-semibold text-[#262262] mb-8">
         OUR CLIENTS
       </h1>
 
       {/* Infinite Scrolling Logos */}
-      <div className="clients-logos w-screen m-auto relative overflow-hidden">
+      <div className="clients-logos w-screen m-auto relative overflow-hidden mt-10">
         <div className=" flex animate-scroll gap-10 items-center whitespace-nowrap">
           {/* Logos */}
           <img src={foodlex} alt="Foodlex" className="h-16" />
