@@ -27,7 +27,7 @@ export default function OurClient() {
           <img src={hiltopTusuki} alt="Hilltop Tsuki" className="h-12" />
           <img src={APVA_logo} alt="APVA Logo" className="h-12 " />
           <img src={foodlex} alt="Foodlex" className="h-12" />
-          <img src={shipdartexpress} alt="APVA Logo" className="h-12 " />
+          <img src={shipdartexpress} alt="APVA Logo" className="h-28 " />
           <img src={piotexventures} alt="APVA Logo" className="h-12 " />
           <img src={piotexindustries} alt="APVA Logo" className="h-12 " />
           <img src={wakeup}  alt="Wake Up" className="h-12 " />
