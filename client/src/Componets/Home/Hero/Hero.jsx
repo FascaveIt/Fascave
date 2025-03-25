@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Code2, Shield, Cpu, ArrowRight, Sparkles, LineChart, Rocket, Brain, Globe2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {  Popover } from 'antd';
+import "../../../App.css"
 function Hero() {
  const content = (
    <div className="flex flex-col space-y-2 p-4  rounded-lg font">
@@ -10,6 +11,8 @@ function Hero() {
     <Link to="/services/app-development" className="text-black hover:text-blue-950">App Development</Link>
     <Link to="/services/digital-marketing" className="text-black hover:text-blue-950">Digital Marketing</Link>
     <Link to="/services/cloud-data-analytics" className="text-black hover:text-blue-950">Cloud Data Analytics</Link>
+    
+    <Link to="/services/Power&BI" className="text-black hover:text-blue-950">Power & BI Visualization Services</Link>
    </div>
   );
 
@@ -64,7 +67,7 @@ function Hero() {
   };
 
   return (
-    <div className="min-h-screen bg-white overflow-hidden px-5">
+    <div className="min-h-screen bg-white overflow-hidden px-5 font">
       {/* Hero Section */}
       <div className="relative">
         {/* Animated Background Elements */}
@@ -109,7 +112,7 @@ function Hero() {
                 <motion.div animate={floatingAnimation}>
                   <Sparkles className="w-4 h-4 text-blue-600" />
                 </motion.div>
-                <span className="text-sm font-medium text-blue-600">Welcome to Fascave</span>
+                <span className="text-sm font-medium text-blue-600">Welcome to FasCave</span>
               </motion.div>
 
               <motion.h1
@@ -117,7 +120,7 @@ function Hero() {
                 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
               >
                 Innovative
-                <span className="block mt-2 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+                <span className="block mt-2 bg-gradient-to-r from-blue-900 to-blue-950 bg-clip-text text-transparent">
                   Technology Solutions
                 </span>
               </motion.h1>
@@ -126,7 +129,7 @@ function Hero() {
                 variants={itemVariants}
                 className="text-lg text-gray-600 max-w-xl"
               >
-                At Fascave, we deliver innovative technology solutions that drive business growth. From web and mobile app development to cutting-edge data analytics, we're your trusted partner in digital transformation. Let's bring your ideas to life with precision, creativity, and expertise.
+                At FasCave, we deliver innovative technology solutions that drive business growth. From web and mobile app development to cutting-edge data analytics, we're your trusted partner in digital transformation. Let's bring your ideas to life with precision, creativity, and expertise.
               </motion.p>
 
               <motion.div

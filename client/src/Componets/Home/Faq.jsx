@@ -44,7 +44,7 @@ const FAQ = () => {
         Our Frequently Asked Questions Are Designed To Provide Quick, Insightful
         Solutions To Your Queries.
       </p>
-      <div className="space-y-4">
+      <div className="space-y-6 mt-5">
         {faqs.map((faq, index) => (
           <div
             key={index}

@@ -5,7 +5,7 @@ import '../../App.css';
 export default function WhyChooseUs() {
   return (
     <motion.div 
-      className="bg-white w-3/4 m-auto py-16 font"
+      className="bg-white w-3/4 mx-auto py-16 font"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

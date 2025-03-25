@@ -93,8 +93,8 @@ export default function ScrolingCard() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <h1 className="ourservices font">OUR SERVICES</h1>
-      <p className="ourp font">
+      <h1 className="ourservices font ">OUR SERVICES</h1>
+      <p className="ourp font text-gray-600">
         Discover our outstanding expertise in delivering services across a
         diverse range of dynamic industries
       </p>

@@ -13,6 +13,7 @@ export default function Navbar() {
     <Link to="/services/app-development" className="text-black hover:text-blue-950">App Development</Link>
     <Link to="/services/digital-marketing" className="text-black hover:text-blue-950">Digital Marketing</Link>
     <Link to="/services/cloud-data-analytics" className="text-black hover:text-blue-950">Cloud Data Analytics</Link>
+    <Link to="/services/Power&BI" className="text-black hover:text-blue-950">Power & BI Visualization Services</Link>
    </div>
   );
 
@@ -23,7 +24,7 @@ export default function Navbar() {
     setMenuActive(!menuActive);
   };
 
-  const [contact, setContact] = useState(false);
+  const [isVisible, setIsVisble] = useState(false);
 
   return (
     <>    
@@ -100,7 +101,7 @@ export default function Navbar() {
       </div>
 
    
-        <button className="bg-blue-950 hover:bg-[#666c81] text-white font-semibold text-sm py-2 px-6 rounded-full shadow consultaion" onClick={()=> setContact(true)}>
+        <button className="bg-blue-950 hover:bg-[#666c81] text-white font-semibold text-sm py-2 px-6 rounded-full shadow consultaion" onClick={()=>setIsVisble(true)}>
           Book a Free Consultation
         </button>
      
@@ -120,10 +121,10 @@ export default function Navbar() {
   
  
  
- {contact && (<div className="absolute top-[100px] left-[400px] z-50">
-<ContactFrom  setContact={setContact}/>
-   </div>
-   )}  
+
+<ContactFrom  visible={isVisible} onClose={()=> setIsVisble(false)}/>
+
+
  
   </>
 
