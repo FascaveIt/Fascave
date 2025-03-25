@@ -11,6 +11,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { CiMail } from "react-icons/ci";
 import { GrMapLocation } from "react-icons/gr";
 import '../../App.css'
+import { Link, NavLink } from "react-router-dom";
 const socialLinks = [
   {
     icon: <FaFacebookF />,
@@ -27,7 +28,7 @@ const socialLinks = [
   {
     icon: <TiSocialPinterest />,
     label: "Pinterest",
-    color: "textblack",
+    color: "text-black",
     link: "https://in.pinterest.com/fascave/",
   },
   {
@@ -52,6 +53,41 @@ const socialLinks = [
 
 
 const Footer = () => {
+   const footerlink =[
+     {name:"Home",
+      link:"#"},
+      {name:"Careers",
+        link:"https://jobs.fascave.com/jobs/Careers"}, 
+        {name:"About",
+          link:"/About_Us"},
+           {name:"Contact",
+            link:"/contact"},     ]
+
+
+            const servicePage=[
+              {
+                name:"Web Development",
+                link:"/services/web-development"
+              },
+              {
+                name:"App Development",
+                link:"/services/app-development"
+              },
+              {
+                name:"Digital Marketing",
+                link:"/services/digital-marketing"
+              },
+              {
+                name:"Cloud Data Analytics",
+                link:"/services/cloud-data-analytics"
+              },
+              {
+                name:"Power & BI Visualization Services",
+                link:"/services/Power&BI"
+              }
+
+            ]
+
   return (
     <footer className="bg-gray-100 text-gray-800 py-10 font">
       <div className="container mx-auto px-4">
@@ -86,16 +122,9 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
-            <ul className="space-y-2 text-sm">
-              {[
-                "Web Development",
-                "Mobile App Development",
-                "Digital Marketing",
-                "WhatsApp Business API",
-                "Cloud Data Analytics",
-                "Power & BI Visualization",
-              ].map((service, index) => (
-                <li key={index}>{service}</li>
+            <ul className="space-y-1 text-sm flex flex-col">
+           { servicePage.map((service, index) => (
+                <NavLink key={index} to={service.link}>{service.name}</NavLink>
               ))}
             </ul>
           </div>
@@ -107,7 +136,7 @@ const Footer = () => {
               <p className="flex items-start gap-2">
                 <GrMapLocation className="text-blue-400 w-10 h-6 mt-1" />
                 FasCave IT Solutions Private Limited First Floor, Govind Complex
-                B, 127, Pote Patil Rd, Amravati, Maharashtra 44460
+                B, 127, Pote Patil Rd, Amravati, Maharashtra 444604
               </p>
               <p className="flex items-center gap-2">
                 <FiPhoneCall className="text-blue-400 w-6 h-6" />
@@ -134,16 +163,17 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-300 mt-8 pt-4 flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>© 2024 All Rights Reserved By FasCave IT Solutions Pvt. Ltd.</p>
+          <p>© 2025 All Rights Reserved By FasCave IT Solutions Pvt. Ltd.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            {["Home", "Careers", "About", "Contact Us"].map((link, index) => (
-              <a
+            {
+           footerlink.map((item,index) => (
+              <Link
                 key={index}
-                href="#"
+                 to={item.link}
                 className="hover:underline hover:text-blue-500"
               >
-                {link}
-              </a>
+                {item.name}
+              </Link>
             ))}
           </div>
         </div>

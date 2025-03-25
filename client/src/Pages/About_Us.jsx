@@ -13,7 +13,7 @@ export default function About_Us() {
         transition={{ duration: 0.6 }}
         className="text-center py-16 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-3xl shadow-lg"
       >
-        <h1 className="text-5xl font-bold">Welcome to Fascave</h1>
+        <h1 className="text-5xl font-bold">Welcome to FasCave</h1>
         <p className="text-lg mt-4 max-w-2xl mx-auto">
           Your trusted IT solutions partner, delivering cutting-edge technology and innovation.
           At FasCave IT Solutions, we are more than just a technology company – we are your dedicated partners in digital transformation. With over a decade of experience, we've been at the forefront of delivering bespoke IT solutions, specializing in web development, mobile applications, and strategic SEO services.
@@ -39,7 +39,7 @@ export default function About_Us() {
           </div>
           <div className="p-6 bg-gray-50 rounded-xl shadow">
             <h3 className="text-2xl font-semibold text-gray-800">Projects Completed</h3>
-            <p className="text-gray-600">400+ Successful IT Solutions Delivered</p>
+            <p className="text-gray-600">100+ Successful IT Solutions Delivered</p>
           </div>
         </div>
       </motion.section>
@@ -61,7 +61,7 @@ export default function About_Us() {
           <h2 className="text-3xl font-semibold text-gray-900">Utkarsh Tadas</h2>
           <p className="text-gray-500 text-lg mb-3">Founder & CEO</p>
           <p className="text-gray-600 max-w-lg">
-            John is a visionary leader in the IT industry, dedicated to transforming businesses through technology.
+          Utkarsh is a visionary leader in the IT industry, dedicated to transforming businesses through technology.
           </p>
         </div>
       </motion.section>
@@ -121,9 +121,7 @@ export default function About_Us() {
           <p className="text-lg flex items-center justify-center gap-2">
             <i className="fas fa-globe text-yellow-300"></i> 
             <strong>Email:</strong> 
-            <a href="
-
-" className="text-white underline">contact@fascave.com</a>
+            <a href="" className="text-white underline">contact@fascave.com</a>
           </p>
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }} className="bg-white bg-opacity-10 p-6 rounded-xl shadow-lg">

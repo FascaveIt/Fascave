@@ -16,6 +16,7 @@ import WebDevService from './Pages/WebDevService.jsx';
 import AppDevService from './Pages/AppDevService.jsx';
 import DigitalMarketingService from './Pages/DigitalMarketingService.jsx';
 import CloudService from './Pages/CloudService.jsx';
+import PowerAndBi from './Pages/PowerAndBi.jsx';
 const router = createBrowserRouter([
   {
     path: "",
@@ -33,6 +34,8 @@ const router = createBrowserRouter([
       { path: "/services/app-development", element: <AppDevService /> },
       { path: "/services/digital-marketing", element: <DigitalMarketingService /> },
       { path: "/services/cloud-data-analytics", element: <CloudService /> },
+      { path: "/services/Power&BI", element: <PowerAndBi /> },
+
 
 
 

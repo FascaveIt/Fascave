@@ -13,6 +13,7 @@ export default function Navbar() {
     <Link to="/services/app-development" className="text-black hover:text-blue-950">App Development</Link>
     <Link to="/services/digital-marketing" className="text-black hover:text-blue-950">Digital Marketing</Link>
     <Link to="/services/cloud-data-analytics" className="text-black hover:text-blue-950">Cloud Data Analytics</Link>
+    <Link to="/services/Power&BI" className="text-black hover:text-blue-950">Power & BI Visualization Services</Link>
    </div>
   );
 

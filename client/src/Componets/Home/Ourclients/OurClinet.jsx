@@ -6,7 +6,8 @@ import ikontech from "../../../Asset/imagesWeb/ikontech.png";
 import shipdartexpress from "../../../Asset/imagesWeb/shipdartexpress.png";
 import piotexventures from '../../../Asset/imagesWeb/Piotex-Ventures.png'
 import piotexindustries from '../../../Asset/imagesWeb/PiotexIndustries.png'
-
+import wakeup from "../../../Asset/imagesWeb/WakeUp.jpg"
+import shetkari from "../../../Asset/imagesWeb/shetkari.png"
 import "./OurClient.css";
 import "../../../App.css"
 export default function OurClient() {
@@ -21,18 +22,17 @@ export default function OurClient() {
       <div className="clients-logos w-screen m-auto relative overflow-hidden mt-10">
         <div className=" flex animate-scroll gap-10 items-center whitespace-nowrap">
           {/* Logos */}
-          <img src={foodlex} alt="Foodlex" className="h-16" />
-          <img src={ikontech} alt="Ikontech" className="h-16" />
-          <img src={hiltopTusuki} alt="Hilltop Tsuki" className="h-16" />
-          <img src={APVA_logo} alt="APVA Logo" className="h-16 mr-4" />
+          <img src={foodlex} alt="Foodlex" className="h-12" />
+          <img src={ikontech} alt="Ikontech" className="h-12" />
+          <img src={hiltopTusuki} alt="Hilltop Tsuki" className="h-12" />
+          <img src={APVA_logo} alt="APVA Logo" className="h-12 " />
+          <img src={foodlex} alt="Foodlex" className="h-12" />
+          <img src={shipdartexpress} alt="APVA Logo" className="h-12 " />
+          <img src={piotexventures} alt="APVA Logo" className="h-12 " />
+          <img src={piotexindustries} alt="APVA Logo" className="h-12 " />
+          <img src={wakeup}  alt="Wake Up" className="h-12 " />
+          <img src={shetkari}  alt="shetkari" className="h-12 " />
 
-          <img src={foodlex} alt="Foodlex" className="h-16" />
-          <img src={ikontech} alt="Ikontech" className="h-16" />
-          <img src={hiltopTusuki} alt="Hilltop Tsuki" className="h-16" />
-          <img src={APVA_logo} alt="APVA Logo" className="h-16 mr-4" />
-          <img src={shipdartexpress} alt="APVA Logo" className="h-10 mr-4 " />
-          <img src={piotexventures} alt="APVA Logo" className="h-10 mr-4 " />
-          <img src={piotexindustries} alt="APVA Logo" className="h-7 mr-4 " />
 
 
         </div>
